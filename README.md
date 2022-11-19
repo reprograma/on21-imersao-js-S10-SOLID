@@ -56,7 +56,14 @@ D — Dependency Inversion Principle (Princípio da Inversão da Dependência)
 * [Material](/material)
 
 ### Links Úteis
-* 
+* https://medium.com/thiago-aragao/solid-princ%C3%ADpios-da-programa%C3%A7%C3%A3o-orientada-a-objetos-ba7e31d8fb25
+* https://medium.com/desenvolvendo-com-paixao/o-que-%C3%A9-solid-o-guia-completo-para-voc%C3%AA-entender-os-5-princ%C3%ADpios-da-poo-2b937b3fc530
+* https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
+* https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+* https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design-pt
+* https://medium.com/@tbaragao/solid-s-r-p-single-responsibility-principle-2760ff4a7edc
+* deviq.com/principles/single-responsibility-principle
+* https://stackify.com/solid-design-principles/
 
 <p align="center">
 Desenvolvido com :purple_heart:  
