@@ -14,17 +14,25 @@ Antes de começar, vamos organizar nosso setup.
 * [Add outras intrucoes caso necessario]
 
 ### Objetivo
-[COLOQUE AQUI O OBJETIVO DA SUA AULA]
+- Aprender e finalizar os exercicios referente ao tema abordado em sala.
 
 ### Resumo
 O que veremos na aula de hoje?
-- [Tema da Aula](#tema-da-aula)
-    - [Instruções](#instruções)
-    - [Objetivo](#objetivo)
-    - [Resumo](#resumo)
+- Teórico e prático SOLID
+    - Sequência:
+S — Single Responsiblity Principle (Princípio da Responsabilidade Única)
+O — Open-Closed Principle (Princípio Aberto-Fechado)
+L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
+I — Interface Segregation Principle (Princípio da Segregação de Interface)
+D — Dependency Inversion Principle (Princípio da Inversão da Dependência)
+
 
 - [Conteúdo](#conteúdo)
-
+S — Single Responsiblity Principle (Princípio da Responsabilidade Única)
+O — Open-Closed Principle (Princípio Aberto-Fechado)
+L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
+I — Interface Segregation Principle (Princípio da Segregação de Interface)
+D — Dependency Inversion Principle (Princípio da Inversão da Dependência)
   - [Exemplo](#exemplo)
     - [O que são e para que servem ](#o-que-são-e-para-que-servem)
     - [Benefícios](#benefícios)
@@ -37,25 +45,6 @@ O que veremos na aula de hoje?
   - [Exercícios](#exercícios)
   - [Material da aula](#material-da-aula)
   - [Links Úteis](#links-úteis)
-
-# Conteúdo
-
-## Exemplo  
-  #### O que são e para que servem
-  [CONTEUDO]
-
-  #### Benefícios
-  [CONTEUDO]
-
-  #### Abordagens
-  [CONTEUDO]
-
-  #### Implementação
-  [CONTEUDO]
-
-## Outro Exemplo
-   #### ETCETC
-   [CONTEUDO]
 
 
 ***
