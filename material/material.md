@@ -104,6 +104,7 @@ class EmployeeValidation {
 
 
 [Voltar](#voltar)
+
 <a id="o"></a>
 ### O — Open-Closed Principle (Princípio Aberto-Fechado)
 
@@ -193,6 +194,7 @@ public class CriptografadoEmail : Email
 ```
 Veja que na solução, criamos várias classes, cada uma com uma responsabilidade definida, suas próprias regras de negócios e sem a necessidade de alterarmos a funcionalidade padrão devido a criação de uma nova regra.
 [Voltar](#voltar)
+
 <a id="l"></a>
 ### L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
 
@@ -265,6 +267,7 @@ class Program
 }
 ```
 [Voltar](#voltar)
+
 <a id="i"></a>
 
 ### I — Interface Segregation Principle (Princípio da Segregação de Interface)
@@ -348,6 +351,7 @@ public class TelefoneComum : ITelefoneComum{
 }
 ```
 [Voltar](#voltar)
+
 <a id="d"></a>
 
 ### D — Dependency Inversion Principle (Princípio da Inversão da Dependência)
@@ -450,4 +454,4 @@ public class Interruptor
   }
 }
 ```
-
+[Voltar](#voltar)
