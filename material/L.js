@@ -51,12 +51,12 @@ class Program
 
 Atividade 3
 
-*/
-
 class employee{
 
 }
 
-subclass extends employee {
-  ATUALIZA DADOS
+class subClassEmployee extends employee {
+  let = ' ATUALIZA DADOS'
 }
+
+*/
