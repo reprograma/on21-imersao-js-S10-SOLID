@@ -43,8 +43,10 @@ Conceito: Uma classe deve ter um e apenas um motivo para mudar, o que significa 
 Objetivo: Esse princípio visa separar comportamentos para que, se surgirem bugs como resultado de sua alteração, isso não afete outros comportamentos não relacionados. Podemos considerar esse princípio o inimigo número 1 do anti-pattern God Class.
 
 Exemplos:
-```
+
 Não utilizando o Princípio da Responsabilidade Única:
+```
+
 class Employee {
   getId() {  Código aqui  }
   setId(id) {  Código aqui  }
