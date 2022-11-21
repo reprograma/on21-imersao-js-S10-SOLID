@@ -103,7 +103,5 @@ class EmployeeValidation {
     calidateEmployeeDetails(employeeDetails) {  Código aqui  }  
 } 
 
-
-
 // Atividade 1
 */
