@@ -1,35 +1,58 @@
-/** 
 class EmployeeModel {
+    getId() {}
+    setId(id) {}
 
-  getId(){}
-  setId(id) {  this. } 
-  
-  getName() {  Código aqui  }
-  setName(name) { Código aqui  }
+    getName() {
+        return "Código aqui";
+    }
+    setName(name) {
+        return "Código aqui";
+    }
 
-  getAddress() {  Código aqui  }
-  setAddress(address) {  Código aqui  }  
-  
-  getDesignation() {  Código aqui  }
-  setDesignation(designation) { Código aqui  } 
-  
-  getSalary() {  Código aqui  }
-  setSalary(salary) {  Código aqui  }
+    getAddress() {
+        return "Código aqui";
+    }
+    setAddress(address) {
+        return "Código aqui";
+    }
+
+    getDesignation() {
+        return "Código aqui";
+    }
+    setDesignation(designation) {
+        return "Código aqui";
+    }
+
+    getSalary() {
+        return "Código aqui";
+    }
+    setSalary(salary) {
+        return "Código aqui";
+    }
 }
 
-class EmployeeImportExport {  
-    exportEmpDetailsToCSV(employeDetails) {  Código aqui  }  
-    importEmpDetailsForDb(employeeDetails) {  Código aqui  }  
+class EmployeeImportExport {
+    exportEmpDetailsToCSV(employeDetails) {
+        return "Código aqui";
+    }
+    importEmpDetailsForDb(employeeDetails) {
+        return "Código aqui";
+    }
 }
 
-class EmployeeDbOperations {  
-    fetchEmployeeDetails(employeeId) {  Código aqui  }  
-    saveEmployeeDetails(employeeDetails) {  Código aqui  }  
-} 
+class EmployeeDbOperations {
+    fetchEmployeeDetails(employeeId) {
+        return "Código aqui";
+    }
+    saveEmployeeDetails(employeeDetails) {
+        return "Código aqui";
+    }
+}
 
-class EmployeeValidation {  
-    calidateEmployeeDetails(employeeDetails) {  Código aqui  }  
-} 
+class EmployeeValidation {
+    calidateEmployeeDetails(employeeDetails) {
+        return "Código aqui";
+    }
+}
 
 // Atividade 1
-*/
