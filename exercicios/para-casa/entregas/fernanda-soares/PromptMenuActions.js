@@ -1,10 +1,9 @@
 import DrinkBio from "./DrinkBio";
 import DrinkOperations from "./DrinkOperations";
 
-export default class PromptActions {
+export default class PromptMenuActions {
   setDrinkMenu() {
-    const drinkOperations = new DrinkOperations();
-    const drinkList = drinkOperations.drinkList;
+    const drinkList = new DrinkOperations().drinkList;
     let drinkMenu = "";
 
     drinkList.array.forEach((drink) => {
@@ -13,6 +12,7 @@ export default class PromptActions {
 
     return drinkMenu;
   }
+
   openMenu() {
     const drinkBio = new DrinkBio();
     const drinkMenu = setDrinkMenu();
