@@ -21,8 +21,6 @@ if(modelo == 'corolla'){
 }
     else if(modelo == 'Uninho'){
         console.log('Especificações Uninho')
-    }
-
 
 //L
 class carros{
