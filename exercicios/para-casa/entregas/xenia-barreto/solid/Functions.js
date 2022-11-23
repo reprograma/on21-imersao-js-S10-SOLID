@@ -1,0 +1,10 @@
+class MenuDrinks {
+    createMenuDrinks(){
+
+    }
+
+    offerMenu(){
+        
+    }
+}
+
