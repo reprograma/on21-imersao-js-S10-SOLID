@@ -12,6 +12,8 @@ class Soda extends Drink {
       brand: this.brand,
     });
   }
+
+  static sodaList = [];
 }
 
 module.exports = Soda;
