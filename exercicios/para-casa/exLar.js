@@ -2,7 +2,6 @@
 Refatore o exercicio da Semana 9 e aplique SOLID (Aplique Classe se necessário)
 
 */
-
 const  listaBebidas  = require('./listaBebidas.js')
 const entrada = require("prompt-sync")({sigint: true})
 
@@ -10,17 +9,17 @@ let finalizar = false;
 
 function imprimirListaBebidas() {
     console.log("\n Bebidas Disponiveis: \n");
-    if (listaBebidas.length > 0) {
-        for (let i = 0; i < listaBebidas.length; i++) {
-            console.log(`Bebida ${i + 1}: ${listaBebidas[i].nome}`);
+    if (listaDeBebidas.length > 0) {
+        for (let i = 0; i < listaDeBebidas.length; i++) {
+            console.log(`Bebida ${i + 1}: ${listaDeBebidas[i].nome}`);
         }
         console.log("\n");
     } else {
-        console.log("Essa bebida não está disponível disponível.");
+        console.log("Essa bebida não está disponível.");
     }
 }
 
-function mostrarDetalhesBebida(id) {
+function mostrarDetalhesDaBebida(id) {
     console.log("\n Bebida selecionada");
     console.log(
         ` ${id}:  
@@ -33,14 +32,15 @@ function mostrarDetalhesBebida(id) {
 
 do {
 
-    let opcao = entrada("** Máquina de Bebidas ** \n Digite a opção Desejada:  \n 1 - Listar bebidas; \n 2 - Mostrar Detalhes Bebida; \n 3 - Sair \n");
+    let opcao = entrada("** Máquina de Bebidas ** \n Digite a opção Desejada:  \n 1 - Listar as bebidas; \n 2 - Mostrar Informações da Bebida; \n 3 - Sair \n");
     switch (opcao) {
-        case "1": imprimirListaBebidas(); break;
+        case "1": imprimirListaDeBebidas(); break;
         case "2": {
             let id = entrada("Digite o número da bebida escolhida:");
-            mostrarDetalhesBebida(id);
+            mostrarInformacoesBebidaPeloId(id);
         }; break;
-        case "3": sair = true; break
+        case "3": sair = true; 
+        break;
         default: console.log("Favor digitar uma opção válida!");
     }
 
