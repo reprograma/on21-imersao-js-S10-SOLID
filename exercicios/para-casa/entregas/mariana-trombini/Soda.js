@@ -1,0 +1,17 @@
+const { Drink } = require('./Drink');
+
+class Soda extends Drink {
+  constructor(id, name, price, brand, flavor) {
+    super(id, name, price, brand, flavor)
+    this.constructor.sodas.push({
+      id: this.id,
+      name: this.name,
+      price: this.price,
+      brand: this.brand,
+      flavor: this.flavor
+    })
+  }
+  static sodas = []
+}
+
+module.exports = { Soda }
