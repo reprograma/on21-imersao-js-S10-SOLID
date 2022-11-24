@@ -46,13 +46,8 @@ Objetivo: Esse princípio visa separar comportamentos para que, se surgirem bugs
 Exemplos:
 
 Não utilizando o Princípio da Responsabilidade Única:
-<<<<<<< Updated upstream
-```
-
-=======
 
 ```
->>>>>>> Stashed changes
 class Employee {
   getId() {  Código aqui  }
   setId(id) {  Código aqui  }

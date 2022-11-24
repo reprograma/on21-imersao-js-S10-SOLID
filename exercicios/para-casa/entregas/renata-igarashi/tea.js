@@ -15,8 +15,3 @@ class Tea extends Drink {
 }
 
 module.exports = { Tea }
-
-// const tea = new Tea(1, "tea", 3.50, "peach", "teaKeylinha")
-// const tea2 = new Tea(1, "tea", 3.50, "Lemon", "teaKeylinhazinha")
-
-// console.log(Tea.teas)

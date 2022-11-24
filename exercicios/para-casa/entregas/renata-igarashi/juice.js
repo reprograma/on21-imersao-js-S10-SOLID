@@ -16,5 +16,3 @@ class Juice extends Drink {
 
 module.exports = { Juice }
 
-// const juice = new Juice(1, "Juice", 5.50, "Orange", "juiceKeylinha")
-// const juice1 = new Juice(1, "Juice", 5.50, "Grape", "juiceKeylinhazinha")
