@@ -21,7 +21,5 @@ const menu = new Menu(newSoda, newJuice, newTea);
 
 
 //Chama os métodos da classe Menu, onde o menu oferta a lista de bebeida e o render tem a opção de voltar ao menu
-// console.log(menu)
-// console.log(menu.getDrinkId(1))
 menu.menu();
 menu.render();
