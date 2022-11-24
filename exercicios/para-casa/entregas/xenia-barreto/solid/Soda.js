@@ -1,12 +1,17 @@
-class Soda {
-    
-    constructor(id, name, price, taste, brand) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.taste = taste;
-        this.brand = brand;
-    }
+const Drink = require("./Drink");
+
+class Soda extends Drink {
+  constructor(id, name, price, taste, brand) {
+    super(id, name, price, taste, brand);
+
+    this.constructor.sodaList.push({
+      id: this.id,
+      name: this.name,
+      price: this.price,
+      taste: this.taste,
+      brand: this.brand,
+    });
+  }
 }
 
-module.exports = Soda
+module.exports = Soda;
