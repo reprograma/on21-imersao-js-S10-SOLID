@@ -3,11 +3,11 @@ SOLID
 Perguntas que devem ser respondidas durante essa aula:
 
 O que é SOLID?
-Por que utilizar?
-Quais os benefícios?
+Por que utilizar? para deixar o código mais limpo, mais rápido.
+Quais os benefícios?Manutenção, reconhecimento( consegue ler o código facilmente)
 SOLID é um acrônimo criado por Michael Feathers que representa os 5 princípios da programação orientada a objetos identificados por Robert Cecil Martin ou Uncle Bob nos princípios de 2000.
 
-**Sequencia de siglas ou vogais que foram uma unica palavra em que cada letra representa um palavra diferente
+Acrônimo=Sequencia de siglas ou vogais que foram uma unica palavra em que cada letra representa um palavra diferente
 
 S — Single Responsiblity Principle (Princípio da Responsabilidade Única)
 O — Open-Closed Principle (Princípio Aberto-Fechado)
@@ -37,7 +37,7 @@ Perguntas que devem ser respondidas durante essa aula:
 
 Qual o conceito e objetivos desse princípio?
 Qual a motivação?
-Quais os benefícios?
+Quais os benefícios? 
 Como e quando aplicar?
 
 Conceito: Uma classe deve ter um e apenas um motivo para mudar, o que significa que uma classe deve ter apenas uma função.
@@ -103,7 +103,7 @@ class EmployeeValidation {
     calidateEmployeeDetails(employeeDetails) {  Código aqui  }  
 } 
 
-
+ex: em um restaurante, eu sou o garçom, caixa e coziheiro ao mesmo tempo.
 
 // Atividade 1
 */

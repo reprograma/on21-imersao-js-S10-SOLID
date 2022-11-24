@@ -79,6 +79,7 @@ public class TelefoneComum : ITelefoneComum{
   public void Discar() { ... }
 }
 
+ex: classe pai tabela inteira, classe filho tabela com filtros.
 Atividade 4
 
 */

@@ -1,6 +1,9 @@
 /* 
 L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
 
+Me lembra diagramas lógicos(todo A é B).
+
+
 O Liskov Substitution Principle (LSP) ou Princípio de Substituição de Liskov está diretamente ligado ao OCP (Open Closed Principle) foi criado por Barbara Liskov uma grande cientista da computação americana.
 
 Uma classe derivada deve ser substituível por sua classe base
@@ -70,5 +73,9 @@ class Program
 
 
 Atividade 3
+
+ex: class pacoteOffice{
+
+}
 
 */

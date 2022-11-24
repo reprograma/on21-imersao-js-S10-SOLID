@@ -1,5 +1,6 @@
 /*
 O — Open-Closed Principle (Princípio Aberto-Fechado)
+basicamente faça coisas genéricas, funções genericas, dinamicas.
 
 Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação.
 
@@ -13,7 +14,7 @@ Dessa forma, conseguiremos manter nossos objetos desacoplados de outros, podendo
 
 Perguntas que devem ser respondidas durante essa aula:
 
-Qual o conceito e objetivos desse princípio?
+Qual o conceito e objetivos desse princípio? Não criar coisas novas dentro de uma estrutura existentes, o codigo deve estar pronto para receber extensões e não modificações.
 Qual a motivação?
 Quais os benefícios?
 Como e quando aplicar?
@@ -23,8 +24,7 @@ Objetivo: Este princípio visa estender o comportamento de uma classe sem altera
 
 Exemplos:
 
-Os códigos abaixo estão em Typescript, é o mais próximo de JS possível, mas permite entender melhor certas coisas que em JS passariam batidas como classe abstrata e/ou interface.
-
+JAVA
 Não utilizando o Princípio Aberto-Fechado:
 
 public enum TipoEmail {
