@@ -19,6 +19,7 @@ Sequencia de siglas ou vogais que formam uma unica palavra em que cada letra rep
 - [D — Dependency Inversion Principle (Princípio da Inversão da Dependência)](#d)
 
 <a id="s"></a>
+
 ### S — Single Responsiblity Principle (Princípio da Responsabilidade Única)
 
 Uma classe deve ter um e apenas um motivo para mudar, o que significa que uma classe deve ter apenas um trabalho.
@@ -45,69 +46,76 @@ Objetivo: Esse princípio visa separar comportamentos para que, se surgirem bugs
 Exemplos:
 
 Não utilizando o Princípio da Responsabilidade Única:
+<<<<<<< Updated upstream
 ```
 
+=======
+
+```
+>>>>>>> Stashed changes
 class Employee {
   getId() {  Código aqui  }
   setId(id) {  Código aqui  }
-  
+
   getName() { Código aqui  }
   setName(name) {  Código aqui  }
 
   getAddress() {  Código aqui }
-  setAddress(address) {  Código aqui  }  
-  
+  setAddress(address) {  Código aqui  }
+
   getDesignation() {  Código aqui  }
-  setDesignation(designation) { Código aqui  } 
-  
+  setDesignation(designation) { Código aqui  }
+
   getSalary() {  Código aqui  }
   setSalary(salary) {  Código aqui  }
 
-  fetchEmployeeDetails(employeeId) {  Código aqui  }  
-  saveEmployeeDetails(employeeDetails) {  Código aqui  }  
-  validateEmployeeDetails(employeeDetails) {  Código aqui  }  
-  exportEmpDetailsToCSV(employeDetails) {  Código aqui  }  
+  fetchEmployeeDetails(employeeId) {  Código aqui  }
+  saveEmployeeDetails(employeeDetails) {  Código aqui  }
+  validateEmployeeDetails(employeeDetails) {  Código aqui  }
+  exportEmpDetailsToCSV(employeDetails) {  Código aqui  }
   importEmpDetailsForDb(employeeDetails) {  Código aqui  }
 }
 ```
+
 Utilizando o Princípio da Responsabilidade Única:
+
 ```
 class EmployeeModel {
   getId() {  Código aqui  }
-  setId(id) {  Código aqui  } 
-  
+  setId(id) {  Código aqui  }
+
   getName() {  Código aqui  }
   setName(name) { Código aqui  }
 
   getAddress() {  Código aqui  }
-  setAddress(address) {  Código aqui  }  
-  
+  setAddress(address) {  Código aqui  }
+
   getDesignation() {  Código aqui  }
-  setDesignation(designation) { Código aqui  } 
-  
+  setDesignation(designation) { Código aqui  }
+
   getSalary() {  Código aqui  }
   setSalary(salary) {  Código aqui  }
 }
 
-class EmployeeImportExport {  
-    exportEmpDetailsToCSV(employeDetails) {  Código aqui  }  
-    importEmpDetailsForDb(employeeDetails) {  Código aqui  }  
+class EmployeeImportExport {
+    exportEmpDetailsToCSV(employeDetails) {  Código aqui  }
+    importEmpDetailsForDb(employeeDetails) {  Código aqui  }
 }
 
-class EmployeeDbOperations {  
-    fetchEmployeeDetails(employeeId) {  Código aqui  }  
-    saveEmployeeDetails(employeeDetails) {  Código aqui  }  
-} 
+class EmployeeDbOperations {
+    fetchEmployeeDetails(employeeId) {  Código aqui  }
+    saveEmployeeDetails(employeeDetails) {  Código aqui  }
+}
 
-class EmployeeValidation {  
-    calidateEmployeeDetails(employeeDetails) {  Código aqui  }  
-} 
+class EmployeeValidation {
+    calidateEmployeeDetails(employeeDetails) {  Código aqui  }
+}
 ```
-
 
 [Voltar](#voltar)
 
 <a id="o"></a>
+
 ### O — Open-Closed Principle (Princípio Aberto-Fechado)
 
 Objetos ou entidades devem estar abertos para extensão, mas fechados para modificação.
@@ -135,6 +143,7 @@ Exemplos:
 Os códigos abaixo estão em Typescript, é o mais próximo de JS possível, mas permite entender melhor certas coisas que em JS passariam batidas como classe abstrata e/ou interface.
 
 Não utilizando o Princípio Aberto-Fechado:
+
 ```
 public enum TipoEmail {
 	Texto,
@@ -149,8 +158,8 @@ public void class EnviarEmail(string mensagem, string assunto, TipoEmail tipo){
 	}
 	else if(tipo == TipoEmail.Html)
 	{
-		mensagem = this.InserirHtml(mensagem); 
-	} 
+		mensagem = this.InserirHtml(mensagem);
+	}
 	else if(tipo == TipoEmail.Criptografado)
 	{
 		mensagem = this.CriptografarMensagem(mensagem);
@@ -160,10 +169,11 @@ public void class EnviarEmail(string mensagem, string assunto, TipoEmail tipo){
 }
 
 ```
+
 Acima temos o exemplo de uma classe que valida o tipo de e-mail para tratar a mensagem de acordo com o seu tipo, mas, quando uma nova forma de mensagem for criada, a classe deverá ser editada e um novo if deverá ser acrescentado a ela.
 
-
 Utilizando o Princípio Aberto-Fechado:
+
 ```
 public abstract class Email
 {
@@ -194,10 +204,12 @@ public class CriptografadoEmail : Email
 	}
 }
 ```
+
 Veja que na solução, criamos várias classes, cada uma com uma responsabilidade definida, suas próprias regras de negócios e sem a necessidade de alterarmos a funcionalidade padrão devido a criação de uma nova regra.
 [Voltar](#voltar)
 
 <a id="l"></a>
+
 ### L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
 
 O Liskov Substitution Principle (LSP) ou Princípio de Substituição de Liskov está diretamente ligado ao OCP (Open Closed Principle) foi criado por Barbara Liskov uma grande cientista da computação americana.
@@ -235,11 +247,13 @@ public class Conta{
 public class ContaGratuita : Conta{
   public override void Cobrar(decimal valor)
   {
-    //Não faz nada aqui 
+    //Não faz nada aqui
   }
 }
 ```
+
 Utilizando o da Substituição de Liskov:
+
 ```
 public class T { //... }
 
@@ -250,7 +264,7 @@ public static class ProgramP
     public static string AcceptObject(T obj)
     {
         return "ok !";
-    }        
+    }
 }
 
 class Program
@@ -259,15 +273,16 @@ class Program
     {
         var x1 = new T();
         var x2 = new S();
-        
+
         //Aceita o objeto do tipo T
         Console.WriteLine(ProgramP.AcceptObject(x1));
-        
+
         //Aceita objeto do tipo S que é um subtipo de T
         Console.WriteLine(ProgramP.AcceptObject(x2));
     }
 }
 ```
+
 [Voltar](#voltar)
 
 <a id="i"></a>
@@ -279,8 +294,6 @@ Um cliente nunca deve ser forçado a implementar uma interface que não usa, ou 
 Esse princípio mostra que devemos criar interfaces mais específicas para nossos objetos, ao invés de uma classe mais genérica para todos do mesmo tipo.
 
 Dessa forma, conseguiremos dar mais segurança às classes criadas em nossos programas. Isso porque, com interfaces mais específicas, colocamos apenas os atributos e as funções que aquela classe que a implementação utilizará.
-
-
 
 Perguntas que devem ser respondidas durante essa aula:
 
@@ -297,6 +310,7 @@ Exemplos:
 Os códigos abaixo estão em Typescript, é o mais próximo de JS possível, mas permite entender melhor certas coisas que em JS passariam batidas como classe abstrata e/ou interface.
 
 Não utilizando o Princípio da Segregação de Interface:
+
 ```
 public interface ITelefone{
   void Tocar();
@@ -313,11 +327,12 @@ public class TelefoneCelular : ITelefone{
 public class TelefoneComum : ITelefone{
   public void Tocar() { ... }
   public void Discar() { ... }
-  public void TiraFoto() { 
+  public void TiraFoto() {
     throw new NotImplementedException();
   }
 }
 ```
+
 Perceba que a classe TelefoneCelular implementou a interface corretamente e todos os métodos eram usuais a classe.
 
 Já para a classe TelefoneComum tivemos um método que lançou uma Exception, pois aquele metódo não tinha utilidade para a classe.
@@ -325,6 +340,7 @@ Já para a classe TelefoneComum tivemos um método que lançou uma Exception, po
 Percebemos que criarmos uma Interface genérica e nada específica às nossas classes isso pode gerar complexidade e difícil manutenção posterior ao código.
 
 Utilizando o Princípio da Segregação de Interface:
+
 ```
 public interface ITelefoneCelular
 {
@@ -352,6 +368,7 @@ public class TelefoneComum : ITelefoneComum{
   public void Discar() { ... }
 }
 ```
+
 [Voltar](#voltar)
 
 <a id="d"></a>
@@ -368,18 +385,19 @@ Sobre esse princípio, Uncle Bob nos confere duas definições:
 
 “Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração”;
 “Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações”.
-Com a Inversão de Dependência, conseguimos desacoplar nossas classes de bibliotecas específicas e fazer com que outras ferramentas possam ser utilizadas no lugar desta primeira. Assim, as classes utilizarão abstrações de interfaces ao invés de outras classes ou de instâncias objetos. 
+Com a Inversão de Dependência, conseguimos desacoplar nossas classes de bibliotecas específicas e fazer com que outras ferramentas possam ser utilizadas no lugar desta primeira. Assim, as classes utilizarão abstrações de interfaces ao invés de outras classes ou de instâncias objetos.
 
 Exemplos:
 
 Os códigos abaixo estão em Typescript, é o mais próximo de JS possível, mas permite entender melhor certas coisas que em JS passariam batidas como classe abstrata e/ou interface.
 
 Não utilizando o Princípio da Inversão de Dependência:
+
 ```
 public class Interruptor
 {
   private Ventilador _ventilador;
-  
+
   public void Acionar()
   {
     if(!_ventilador.Ligado)
@@ -390,19 +408,21 @@ public class Interruptor
 }
 
 public class Ventilador
-{  
+{
   public bool Ligado {get; set; }
-  
+
   public void Ligar() { ... }
-  
+
   public void Desligar() { ... }
 }
 ```
+
 No exemplo, podemos perceber que além de quebrar outros princípios do SOLID, a classe concreta Interruptor depende de uma outra classe concreta (Ventilador).
 
 O Interruptor deveria ser capaz de acionar qualquer dispositivo independente de ser um ventilador uma lâmpada ou até mesmo um carro.
 
 Utilizando o Princípio da Inversão de Dependência:
+
 ```
 interface IDispositivo
 {
@@ -413,9 +433,9 @@ interface IDispositivo
 }
 
 public class Ventilador : IDispositivo
-{  
+{
   public bool Ligado { get; set; }
-  
+
   public void Acionar ()
   {
     if (!this.Ligado)
@@ -423,16 +443,16 @@ public class Ventilador : IDispositivo
     else
       this.Desligar();
   }
-  
+
   public void Ligar() { ... }
-  
+
   public void Desligar() { ... }
 }
 
 public class Lampada : IDispositivo
-{  
+{
   public bool Ligado { get; set; }
-  
+
   public void Acionar ()
   {
     if (!this.Ligado)
@@ -440,20 +460,21 @@ public class Lampada : IDispositivo
     else
       this.Desligar();
   }
-  
+
   public void Ligar() { ... }
-  
+
   public void Desligar() { ... }
 }
 
 public class Interruptor
 {
   private readonly IDispositivo _dispositivo;
-  
+
   public void AcionarDispositivo()
   {
     _dispositivo.Acionar();
   }
 }
 ```
+
 [Voltar](#voltar)
