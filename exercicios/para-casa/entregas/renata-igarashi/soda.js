@@ -16,6 +16,4 @@ class Soda extends Drink {
 
 module.exports = { Soda }
 
-// const soda = new Soda(1, "Soda", 3.50, "Strawberry", "refriKeylinha")
-// const soda1 = new Soda(1, "Soda", 3.50, "Lemon", "refriKeylinhazinha")
 
