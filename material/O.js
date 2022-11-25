@@ -46,6 +46,7 @@ public void class EnviarEmail(string mensagem, string assunto, TipoEmail tipo){
 	{
 		mensagem = this.CriptografarMensagem(mensagem);
 	}
+	
 
 	this.EnviarMensagem();
 }
@@ -83,6 +84,9 @@ public class CriptografadoEmail : Email
 		Util.CriptografarMensagem(mensagem);;
 	}
 }
+
+
+
 
 Veja que na solução, criamos várias classes, cada uma com uma responsabilidade definida, suas próprias regras de negócios e sem a necessidade de alterarmos a funcionalidade padrão devido a criação de uma nova regra.
 
