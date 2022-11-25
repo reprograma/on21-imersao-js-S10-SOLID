@@ -8,5 +8,4 @@ class MenuItem {
   }
 }
 
-// module.exports = MenuItem;
 export { MenuItem };
