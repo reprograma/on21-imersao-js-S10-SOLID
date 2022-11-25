@@ -1,30 +1,12 @@
-/*
-Exercicio para o lar Semana 8 - Clean Code
-Assim que a função for iniciada, um menu deve ser ofertado ao usuário com  a lista de bebidas disponíveis. Ao escolher uma, as principais características devem ser exibidas (Nome, Preço, Marca e Sabor).
-O Usuário deve ter a opção de voltar para o menu após a seleção de uma bebida.*/
-const menu = [
-  {
-    id: 1,
-    name: "Refrigerante",
-    price: 3.5,
-    flavour: "Morango",
-    brand: "RefriKeylinha",
-  },
-  {
-    id: 2,
-    name: "Suco",
-    price: 2.5,
-    flavour: "Uva",
-    brand: "SuquinhoKeylinha",
-  },
-  {
-    id: 3,
-    name: "Chá",
-    price: 3.0,
-    flavour: "Mate",
-    brand: "MateKeylinha",
-  },
-];
+// const MenuItem = require("./menuItem");
+import { MenuItem } from "./menuItem.js";
+
+const soda = new MenuItem(1, "Refrigerante", 3.5, "Morango", "RefriKeylinha");
+const juice = new MenuItem(2, "Suco", 2.5, "Uva", "SuquinhoKeylinha");
+const tea = new MenuItem(3, "Chá", 3.0, "Mate", "MateKeylinha");
+
+const menu = [soda, juice, tea];
+
 function ofertaMenu() {
   const choiceNumber = Number(
     prompt(`Informe o numero que deseja informações:
