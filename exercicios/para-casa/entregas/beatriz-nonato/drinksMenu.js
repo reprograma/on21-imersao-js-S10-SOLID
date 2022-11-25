@@ -28,7 +28,7 @@ const drinksMenu = () => {
     case "2":
       const sodas = Soda.sodaList;
       console.table(sodas);
-      offerMenu();
+      drinksMenu();
       break;
 
     case "3":
