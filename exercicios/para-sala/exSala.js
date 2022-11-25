@@ -4,56 +4,95 @@ Aplique SOLID nos exemplos abaixo:
 */
 // S
 class Car {
-    construtor(nome, modelo, ano){
-         this.name = nome this.model = model this.year = year }
-    getCar(id){
-         return this.http.get('api/cars/' + id) }
-    saveCar(){
-         return this.post('api/cars', { name: this.name, year: this.year, model: this.model }) 
+    id;
+    construtor(name, model, year) {
+
+        this.name = nome;
+        this.model = model;
+        this.year = year
+    }
+
+}
+
+
+class getCar extends Car {
+    super(id) {
+        this.http.get(`api/cars/`, id);
+
+    }
+}
+
+class saveCar extends Car {
+    super(name, model, year) {
+
+        this.post('api/cars', { name: this.name, year: this.year, model: this.model })
+
 
     }
 }
 
 //O
-let modelo = prompt('Informe o modelo do veiculo');
-if(modelo == 'corolla'){
-    console.log('Especificações do Corolla')
-}
-    else if(modelo == 'Uninho'){
-        console.log('Especificações Uninho')
+
+class modeloVeiculo extends Car {
+    super(model) {
+        model = prompt('Informe o modelo do veiculo');
+        if (model == 'corolla') {
+            console.log('Especificações do Corolla')
+        }
+        else if (model == 'Uninho') {
+            console.log('Especificações Uninho')
+        }
     }
+}
 
 
 //L
-class carros{
-    constructor(modelo){
-
-        this.aviao = 'Voar';
-        this.moto = 'Empinar'
+class carros extends Car{
+    constructor(model, style) {
+        super(model)
+        if (this.model = 'aviao')
+        {
+        this.style = 'Voar';
+        
+        }
+        if (this.model = 'moto')
+        {
+     
+        
+        this.style = 'Empinar'
     }
+}
 }
 
 //I
-class abrirFecharJanela{
-    abrirJanela(puxar){
-        return this.puxar;
-        
-    }
-    fecharJanela(empurrar){
-        return this.empurrar;
+
+
+class abrirJanela {
+   constructor(puxar) {
+        return this.puxar = puxar;
 
     }
-    limparJanela(pano){
-        return this.pano;
-    }
-    
+
 }
 
+class fecharJanela{
+    constructor(empurrar){
+        return this.empurrar = empurrar;
+
+    }
+}
+
+class limparJanela{
+    constructor(pano){
+        return this.pano = pano;
+
+    }
+}
 //D
 
-class ligarDesligar{
-ventilador(ligar,desligar){
-    this.ligar;
-    this.desligar;
+class ligarDesligar {
+    ventilador(ligar, desligar) {
+        this.ligar = ligar;
+        this.desligar= desligar;
     }
 }
