@@ -1,31 +1,31 @@
 const drink = require('./drink')
 
+  
+const Soda = new drink(1,"Soda",3.50,"Morango","SodaKeylinha")
+const Juice = new drink( 2,"Juice",2.50,"Juice","JuiceKeylinha");
+const Tea = new drink( 3, "Tea", 3.00,"Tea","TeaKeylinha");
 
-const refrigerante = new drink(1,"Refrigerante",3.50,"Morango","RefriKeylinha")
-const suco = new drink( 2,"Suco",2.50,"Uva","SuquinhoKeylinha");
-const cha = new drink( 3, "Chá", 3.00,"Mate","MateKeylinha");
-const sair = new drink(4, 'Sair do menu');
 
 
  function offerMenu() {
-  
-     let choose = Number(prompt(`Informe o numero que deseja informações:
-    1- ${refrigerante.name}
-    2- ${suco.name}
-    3- ${ cha.name}
-     4- ${sair.name}
+
+     let choose = Number(prompt(`Enter the number you want information on:
+    1- Soda
+    2- Juice
+    3- Tea
+    4- Exit Menu
     `)
 
  );
       
      switch (choose) {
-         case 1: alert(` Nome: ${refrigerante.name}\n Preço: R$${(refrigerante.price).toFixed(2)}\n flavor: ${refrigerante.flavor}\n brand: ${refrigerante.brand}`);
+         case 1: alert(` Nome: ${Soda.name}\n Preço: R$${(Soda.price).toFixed(2)}\n flavor: ${Soda.flavor}\n brand: ${Soda.brand}`);
         offerMenu();
          break;
-         case 2: alert(` Nome: ${suco.name}\n Preço: R$${(suco.price).toFixed(2)}\n flavor: ${suco.flavor}\n brand: ${suco.brand}`);
+         case 2: alert(` Nome: ${Juice.name}\n Preço: R$${(Juice.price).toFixed(2)}\n flavor: ${Juice.flavor}\n brand: ${Juice.brand}`);
          offerMenu();
          break;
-        case 3: alert(` Nome: ${cha.name}\n Preço: R$${(cha.price).toFixed(2)}\n flavor: ${cha.flavor}\n brand: ${cha.brand}`);
+        case 3: alert(` Nome: ${Tea.name}\n Preço: R$${(Tea.price).toFixed(2)}\n flavor: ${Tea.flavor}\n brand: ${Tea.brand}`);
         offerMenu();
         break;
         case 4: 
@@ -34,7 +34,7 @@ const sair = new drink(4, 'Sair do menu');
          break;
          default :
          {
-         alert('Opção inválida');
+         alert('Invalid option');
          offerMenu();
          }
      }
