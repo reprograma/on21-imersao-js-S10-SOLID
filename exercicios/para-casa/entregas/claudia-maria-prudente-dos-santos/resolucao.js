@@ -1,4 +1,3 @@
-// const MenuItem = require("./menuItem");
 import { MenuItem } from "./menuItem.js";
 
 const soda = new MenuItem(1, "Refrigerante", 3.5, "Morango", "RefriKeylinha");
