@@ -24,12 +24,12 @@ const agua = (marca) => {
     produto
   );
 
-  console.log(Object.entries(produto[marca]));
+  console.log("Você escolheu: ", Object.entries(produto[marca]));
 };
 
 const refrigerantes = (marca) => {
   const produto = {
-    Pepsi: [
+    ["Pepsi"]: [
       {
         Produto: "Refri Pepsi",
         Valor: 7.5 + "R$",
@@ -54,7 +54,7 @@ const refrigerantes = (marca) => {
     produto
   );
 
-  console.log(Object.entries(produto[marca]));
+  console.log("Você escolheu: ", Object.entries(produto[marca]));
 };
 
 const sake = (marca) => {
@@ -114,7 +114,7 @@ const drinks = (marca) => {
     produto
   );
 
-  console.log(Object.entries(produto[marca]));
+  console.log("Você escolheu: ", Object.entries(produto[marca]));
 };
 
 const menu = {
@@ -138,21 +138,17 @@ function barCabecaDeJavali(opcao, escolhaDoMenu, marcaDoProduto) {
   if (opcao === "") {
     if (escolha() === 1) {
       console.log(menu[escolhaDoMenu]);
-      return `Você escolheu:  ${agua(marcaDoProduto)}`;
     }
     if (escolha() === 2) {
       console.log(menu[escolhaDoMenu]);
-      return `Você escolheu:  ${refrigerantes(marcaDoProduto)}`;
     }
     if (escolha() === 3) {
       console.log(menu[escolhaDoMenu]);
-      return `Você escolheu:  ${sake(marcaDoProduto)}`;
     }
     if (escolha() === 4) {
       console.log(menu[escolhaDoMenu]);
-      return `Você escolheu:  ${drinks(marcaDoProduto)}`;
     }
   }
 }
 
-console.log(barCabecaDeJavali("", 2, "Pepsi"));
+console.log(barCabecaDeJavali("", 1, "Crystal"));
