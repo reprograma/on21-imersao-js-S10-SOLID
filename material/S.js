@@ -7,7 +7,7 @@ Por que utilizar?
 Quais os benefícios?
 SOLID é um acrônimo criado por Michael Feathers que representa os 5 princípios da programação orientada a objetos identificados por Robert Cecil Martin ou Uncle Bob nos princípios de 2000.
 
-**Sequencia de siglas ou vogais que foram uma unica palavra em que cada letra representa um palavra diferente
+**Acronimo = Sequencia de siglas ou vogais que foram uma unica palavra em que cada letra representa um palavra diferente
 
 S — Single Responsiblity Principle (Princípio da Responsabilidade Única)
 O — Open-Closed Principle (Princípio Aberto-Fechado)
