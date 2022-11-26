@@ -1,10 +1,10 @@
-const Drink = require("./Drink");
+const Drink = require("./classDrink");
 
-class Soda extends Drink {
-      coonstructor(id, name, price, flavor, brand) {
+class Juice extends Drink {
+      constructor(id, name, price, flavor, brand) {
             super(id, name, price, flavor, brand);
 
-            this.constructor.sodaList.push({
+            this.constructor.juiceList.push({
                   id: this.id,
                   name: this.name, 
                   price: this.price,
@@ -13,7 +13,7 @@ class Soda extends Drink {
             });
       }
 
-      static sodaList = [];
+      static juiceList = [];
 }
 
-module.exports = Soda
+module.exports = Juice

@@ -1,7 +1,7 @@
-const Drink = require("./Drink");
+const Drink = require("./classDrink");
 
 class Tea extends Drink {
-      coonstructor(id, name, price, flavor, brand) {
+      constructor(id, name, price, flavor, brand) {
             super(id, name, price, flavor, brand);
 
             this.constructor.teaList.push({
