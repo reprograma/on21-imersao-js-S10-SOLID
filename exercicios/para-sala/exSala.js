@@ -4,17 +4,17 @@ Aplique SOLID nos exemplos abaixo:
 */
 // S
 class Car {
-    construtor(nome, modelo, ano){
-         this.name = nome this.model = model this.year = year }
-    getCar(id){
-         return this.http.get('api/cars/' + id) }
-    saveCar(){
-         return this.post('api/cars', { name: this.name, year: this.year, model: this.model }) 
+    id
 
+    construtor(name, model, year) {
+        this.name = name;
+        this.model = model;
+        this.year = year 
     }
 }
-
+/** 
 //O
+
 let modelo = prompt('Informe o modelo do veiculo');
 if(modelo == 'corolla'){
     console.log('Especificações do Corolla')
@@ -22,9 +22,41 @@ if(modelo == 'corolla'){
     else if(modelo == 'Uninho'){
         console.log('Especificações Uninho')
     }
+*/
 
+class getCar extends Car {
+    super(id) {
+        this.http.get(`api/cars/`, id)
+    }
+}
+
+class saveCar extends Car {
+    super(name, model, yars) {
+        this.post(`api/cars`, {
+            name: this.name,
+            model: this.model,
+            year: this.year
+        })
+    }
+}
+
+//O
+
+class vehicleModels extends Car {
+    super(model) {
+        model = prompt('Informe o modelo do veiculo');
+        if (model == 'corolla') {
+            console.log('Especificações do Corolla')
+        }
+        else if (model == 'Uninho') {
+            console.log('Especificações Uninho')
+        }
+    }
+}
 
 //L
+
+/** 
 class carros{
     constructor(modelo){
 
@@ -32,8 +64,27 @@ class carros{
         this.moto = 'Empinar'
     }
 }
+*/
+
+class cars extends Car {
+    constructor(model, style) {
+        super(model)
+        if (this.model = 'aviao') {
+            this.style = 'Voar';
+        }
+
+        if (this.model = 'moto') {
+            this.style = 'Empinar'
+        }
+    }
+}
+
+
+
 
 //I
+
+/**
 class abrirFecharJanela{
     abrirJanela(puxar){
         return this.puxar;
@@ -48,12 +99,45 @@ class abrirFecharJanela{
     }
     
 }
+*/
+
+class openWindow {
+    constructor(pull) {
+         return this.pull = pull;
+    }
+}
+
+class closeWindow {
+    constructor(push){
+        return this.push = push;
+
+    }
+}
+
+class cleanWindow {
+    constructor(floorCloth){
+        return this.floorCloth = floorCloth;
+
+    }
+}
+
+
 
 //D
 
+/**
 class ligarDesligar{
 ventilador(ligar,desligar){
     this.ligar;
     this.desligar;
+    }
+}
+
+*/
+
+class onOff {
+    fan(on, off) {
+        this.on = on;
+        this.off = off;
     }
 }
