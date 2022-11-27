@@ -1,4 +1,4 @@
-const offerMenu = require('./controller/offerMenu');
+const offerMenu = require('./controler/offerMenu');
 const Juice = require('./services/drinks/Juice')
 const Soda = require('./services/drinks/Soda')
 const Tea = require('./services/drinks/Tea')
