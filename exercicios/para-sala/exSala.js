@@ -4,8 +4,12 @@ Aplique SOLID nos exemplos abaixo:
 */
 // S
 class Car {
-    construtor(nome, modelo, ano){
-         this.name = nome this.model = model this.year = year }
+    construtor(name, model, year){
+         this.name = name;
+         this.model = model; 
+         this.year = year 
+        }
+
     getCar(id){
          return this.http.get('api/cars/' + id) }
     saveCar(){
