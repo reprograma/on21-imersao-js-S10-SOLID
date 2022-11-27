@@ -1,0 +1,22 @@
+{
+  "name": "on21-imersao-js-s10-solid",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">   <img src=\"assets/reprograma-fundos-claros.png\" alt=\"logo reprograma\" width=\"500\"> </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davinyvidal/on21-imersao-js-S10-SOLID.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davinyvidal/on21-imersao-js-S10-SOLID/issues"
+  },
+  "homepage": "https://github.com/davinyvidal/on21-imersao-js-S10-SOLID#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
