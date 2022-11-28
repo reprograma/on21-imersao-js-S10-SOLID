@@ -1,4 +1,6 @@
 /* 
+
+https://javascript.plainenglish.io/s-o-l-d-with-javascript-examples-e8a071345c8a (exemplo cintia para liskov javascript)
 L — Liskov Substitution Principle (Princípio da Substituição de Liskov)
 
 O Liskov Substitution Principle (LSP) ou Princípio de Substituição de Liskov está diretamente ligado ao OCP (Open Closed Principle) foi criado por Barbara Liskov uma grande cientista da computação americana.
