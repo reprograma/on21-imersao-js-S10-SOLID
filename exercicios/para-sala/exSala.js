@@ -4,18 +4,18 @@ Aplique SOLID nos exemplos abaixo:
 */
 {// S
 class Car {
-    construtor(nome, modelo, ano){
+    construtor(nome, model, year){
         this.name = nome; this.model = model; this.year = year; 
     }
 }
 
-class GetInfo {
+class GetCar extends Car{
     getInfo(id){
         return this.http.get('api/cars/' + id);
     }    
 }
 
-class SaveInfo extends Car{
+class SaveCar extends Car{
     constructor(){
         super(nomde, modelo, ano)
     }
@@ -27,6 +27,19 @@ class SaveInfo extends Car{
 
 {//O
 let modelo = prompt('Informe o modelo do veiculo');
+class modeloCarro {
+    modelos = [
+        {
+            modelo: "corolla"
+        },
+        {
+            modelo: "uninho"
+        },
+        {
+            modelo: "celta"
+        }
+    ]
+}
 if(modelo == 'corolla'){
     console.log('Especificações do Corolla')
 }

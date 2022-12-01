@@ -3,8 +3,11 @@ SOLID
 Perguntas que devem ser respondidas durante essa aula:
 
 O que é SOLID?
-Por que utilizar?
+acronomo em 5 princípios da programação orientada a objetos
+Por que utilizar? 
+Para que a classe não passe a ter conteúdos que não são pertinentes a ela
 Quais os benefícios?
+mais fácil de dar manutençao e visualmente é mais bonito
 SOLID é um acrônimo criado por Michael Feathers que representa os 5 princípios da programação orientada a objetos identificados por Robert Cecil Martin ou Uncle Bob nos princípios de 2000.
 
 **Sequencia de siglas ou vogais que foram uma unica palavra em que cada letra representa um palavra diferente
